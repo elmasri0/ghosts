@@ -34,10 +34,85 @@ number=input('Enter Your Nember Flex family:')
 print()
 password=input("Enter Your Password:") 
 print()
-number2=input(" \033[2;32mEnter Your Number :")
+url="https://mobile.vodafone.com.eg/auth/realms/vf-realm/protocol/openid-connect/token"
+
+
+
+headers={
+    "Accept":"application/json, text/plain, */*",
+    "Connection":"keep-alive",
+    "x-dynatrace":"MT_3_17_998679495_45-0_a556db1b-4506-43f3-854a-1d2527767923_0_18957_273",
+    "x-agent-operatingsystem":"1630483957",
+    "clientId":"AnaVodafoneAndroid",
+    "x-agent-device":"RMX1911",
+    "x-agent-version":"2021.12.2",
+    "x-agent-build":"493",
+    "Content-Type":"application/x-www-form-urlencoded",
+    "Content-Length":"143",
+    "Host":"mobile.vodafone.com.eg",
+    "Accept-Encoding":"gzip",
+    "User-Agent":"okhttp/4.9.1"
+    }
+    
+    
+data={
+"username":number,
+
+"password":password,
+
+"grant_type":"password",
+
+"client_secret":"a2ec6fff-0b7f-4aa4-a733-96ceae5c84c3",
+
+"client_id":"my-vodafone-app"
+    }    
+    
+    
+Ahmed=requests.post(url, headers=headers, data=data)
+
+jwt=Ahmed.json()["access_token"]
+
+number2=input(" \033[2;32mEnter Your Number mumber:")
 print()
 password2=input('Enter Your password mumber:') 
 print()
+vpn="https://mobile.vodafone.com.eg/auth/realms/vf-realm/protocol/openid-connect/token"
+
+
+
+vpn2={
+    "Accept":"application/json, text/plain, */*",
+    "Connection":"keep-alive",
+    "x-dynatrace":"MT_3_17_998679495_45-0_a556db1b-4506-43f3-854a-1d2527767923_0_18957_273",
+    "x-agent-operatingsystem":"1630483957",
+    "clientId":"AnaVodafoneAndroid",
+    "x-agent-device":"RMX1911",
+    "x-agent-version":"2021.12.2",
+    "x-agent-build":"493",
+    "Content-Type":"application/x-www-form-urlencoded",
+    "Content-Length":"143",
+    "Host":"mobile.vodafone.com.eg",
+    "Accept-Encoding":"gzip",
+    "User-Agent":"okhttp/4.9.1"
+    }
+    
+    
+vpn3={
+"username":number2,
+
+"password":password2,
+
+"grant_type":"password",
+
+"client_secret":"a2ec6fff-0b7f-4aa4-a733-96ceae5c84c3",
+
+"client_id":"my-vodafone-app"
+    }    
+    
+    
+z=requests.post(vpn, headers=vpn2, data=vpn3)
+
+lok=z.json()["access_token"]
 
 gcv=input("\033[2;36mThe Number Of Flex :")
 print()
