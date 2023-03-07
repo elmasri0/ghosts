@@ -21,13 +21,13 @@ print('_'*65)
 
 os=("by: MR ALAA")
 
-number='01097644586'
+number=input('Enter Your Nember Flex family:') 
 print()
-password="Kings123@1"
+password=input("Enter Your Password:") 
 print()
 number2=input(" \033[2;32mEnter Your Number :")
 print()
-password2='Kings123@1'
+password2=input('Enter Your password mumber:') 
 print()
 
 gcv=input("\033[2;36mThe Number Of Flex :")
