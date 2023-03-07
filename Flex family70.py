@@ -16,7 +16,16 @@ B = '\033[2;36m'#سمائي
 Y = '\033[1;34m' #ازرق فاتح
 os=pyfiglet.figlet_format       ( "     __ F L E X __")
 print(Z+os)
-
+y=input('Enter password script:') 
+if str('Ghost') == str(y):
+   	print('ok')
+        
+else:
+	print(Z+'Error password ')
+	print('\033[2;31m_'*65)
+	hhhhgg
+	hhhyo
+	jfkfifjfj
 print('_'*65)
 
 os=("by: MR ALAA")
