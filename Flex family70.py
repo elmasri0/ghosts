@@ -30,7 +30,7 @@ print('_'*65)
 
 os=("by: MR ALAA")
 
-number=input('Enter Your Nember Flex family:') 
+number=input(F+'Enter Your Nember Flex family:') 
 print()
 password=input("Enter Your Password:") 
 print()
@@ -127,13 +127,13 @@ lokae=('              '+(lll+oopl))
 print(lokae)
 print('\033[2;31mThe Flex')
 print()
-y=input('Can t go back  (y/n) : ')
+y=input(F+'Can t go back  (y/n) : ')
 
 if str('y') == str(y):
    	print('ok')
         
 else:
-	print('\033[2;35mThe order has been cancelled ')
+	print(Z+'The order has been cancelled ')
 	print('\033[2;31m_'*65)
 	hhhhgg
 	hhhyo
